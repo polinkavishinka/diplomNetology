@@ -111,6 +111,7 @@
     font-weight: 700;
     margin-top: 63px;
     text-align: center;
+    text-transform: uppercase;
   }
   .trends-heading::after{
     content: "";
@@ -196,15 +197,17 @@
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
-    text-transform: uppercase;
-    
-    
+    text-transform: uppercase;  
  }
 
- .paragraph-trends:hover{
-  color: #b59f5b;
+ .paragraph-trends-link:hover{
+    color: #b59f5b;
  }
 
+ .paragraph-trends-link{
+    text-decoration: none;
+    color: #ffffff;
+ }
   .div{
     display: flex;
     justify-content: space-between;
@@ -221,13 +224,14 @@
     justify-content: space-between;
     max-width: 778px;
   }
-  
+ 
   .img {
     max-width: 381px;
     background-color: #eff6f1;
   }
   .content{
    margin-left: 32px;
+   max-width: 364px
   }
   
   .link-item{
@@ -309,7 +313,7 @@
     margin-top: 63px;
     text-align: center;
     position: relative;
-  
+    text-transform: uppercase;
     z-index: 0;
   }
   
@@ -340,6 +344,7 @@
   }
   .mini-paragraph{
     display: flex;
+   
   }
   .mini-paragraph:nth-of-type(1n + 2){
     margin-top: 20px;
@@ -348,10 +353,11 @@
     width: 70px;
     background-color: #f4f7f6;
   }
-  
+  .date-text-mini{
+    margin-left: 15px;
+  }
   .date-text{
     padding-top: 0;
-    margin-left: 22px;
   }
   
   .mini-date{
@@ -379,6 +385,7 @@
     display: flex;
     align-items: flex-end;
     margin-top: 60px;
+
   }
   
   .field{
@@ -387,11 +394,23 @@
     background-color: #f4f7f6;
     border: none;
     padding-left: 15px;
+    
   }
   .field:focus{
     outline: none;
     border: 1px solid #b59f5b;
   }
+  .visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1, 1, 1, 1);
+    overflow: hidden;
+  }
+
   #query{
     font-size: 0.8125rem;
     line-height: 40px;
@@ -539,7 +558,7 @@
     outline: 3px solid #b59f5b;
     outline-offset: 10px;
     width: 347px;
-    height: 261px;
+    min-height: 261px;
     flex-grow: 1;
     padding-top: 50px;
     margin-bottom: 64px;
@@ -609,6 +628,7 @@
     background-color: #b59f5b;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
   }
   .product-button:hover{
     background-color: #323232;
@@ -678,10 +698,14 @@
     color: #999999;
     font-weight: 700;
     margin: 73px auto 41px;
+    
+  }
+  .footer-text-link{
+    text-decoration: none;
+    color: #999999;
   }
 
   .hidden{
-
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -690,7 +714,7 @@
     top: 0;
     left: 0;
     display: flex;
-    display: none;
+    
     
   }  
   
@@ -771,6 +795,7 @@
   .second{
     margin-left: 15px;
   }
+  
   input[type=radio] {
    border: 0; 
    clip: rect(0 0 0 0); 
@@ -952,14 +977,6 @@
         line-height: 36px;
         
       }
-
-
-
-
-
-
-
-
       
       .trends-container{
         display: flex;
