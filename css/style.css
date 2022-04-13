@@ -148,19 +148,23 @@
   .text-trends.lifestyle{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/trend1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .text-trends.food{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/trend2.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .text-trends.travel{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/trend3.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .text-trends.health{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/trend4.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .frame{
@@ -230,6 +234,7 @@
   .img {
     max-width: 381px;
     background-color: #eff6f1;
+    background-size: cover;
   }
   .content{
    margin-left: 32px;
@@ -354,6 +359,7 @@
   .mini-img{
     width: 70px;
     background-color: #f4f7f6;
+    background-size: cover;
   }
   .date-text-mini{
     margin-left: 15px;
